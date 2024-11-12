@@ -13,9 +13,9 @@ const newUser = {
     getText: () => {return "I'll do it!!!"},
 };
 
-// const mainPage = new MainPage(page);
-// await mainPage.open(url);
-// await mainPage.register();
+const mainPage = new MainPage();
+await mainPage.open(url);
+await mainPage.goToRegister();
 
 
 console.log(newUser.getText());
